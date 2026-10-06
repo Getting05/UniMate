@@ -234,6 +234,16 @@ Prompts matter. Write short captions in the style of the training captions (`dat
 
 </details>
 
+## Astro P2 robot data
+
+This fork includes an MJCF adapter for the 30-DOF Astro P2. It prepares the
+robot skeleton for text sampling, projects generated motions onto the real
+joint axes and limits, and exports metre-scale robot NPZs, diagnostic JSONs
+and MuJoCo previews. See the [Chinese operation guide](docs/astro_p2_guide_zh.md).
+Source MJCF/meshes stay on your machine; checkpoints and generated files are
+not committed. Outputs are kinematic candidates and need quality screening
+and controller validation before use on hardware.
+
 ## 🎨 Applications
 
 The same trained model does three more tasks with no extra training. Each is replacement-style sampling: part of the motion is pinned to a known signal and the flow ODE denoises only the rest at every step, so the constraint holds exactly rather than being encouraged by a loss.

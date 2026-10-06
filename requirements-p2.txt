@@ -1,0 +1,4 @@
+# Install the upstream requirements first, then these P2 conversion dependencies.
+mujoco==3.15.0
+scipy==1.15.3
+pytest==9.1.1

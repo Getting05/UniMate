@@ -1,0 +1,38 @@
+{
+  "name": "astro_p2",
+  "root_body": "pelvis",
+  "expected_dofs": 30,
+  "right_hip": "right_hip_pitch_link",
+  "left_hip": "left_hip_pitch_link",
+  "labels": {
+    "pelvis": "Pelvis",
+    "waist_yaw_link": "Spine",
+    "waist_pitch_link": "Spine",
+    "waist_roll_link": "Chest",
+    "head_link": "Head"
+  },
+  "side_labels": {
+    "hip_pitch_link": "Hip",
+    "hip_roll_link": "Hip",
+    "hip_yaw_link": "Thigh",
+    "knee_link": "Knee",
+    "ankle_pitch_link": "Ankle",
+    "ankle_roll_link": "Foot",
+    "shoulder_pitch_link": "Shoulder",
+    "shoulder_roll_link": "Shoulder",
+    "shoulder_yaw_link": "Upper Arm",
+    "elbow_link": "Elbow",
+    "wrist_roll_link": "Forearm",
+    "wrist_pitch_link": "Wrist",
+    "wrist_yaw_link": "Hand"
+  },
+  "tips": {
+    "left_ankle_roll_link": {"offset": [0.10, 0, -0.039], "label": "Left Toe"},
+    "right_ankle_roll_link": {"offset": [0.10, 0, -0.039], "label": "Right Toe"},
+    "left_wrist_yaw_link": {"offset": [0.08, 0, 0], "label": "Left Hand Tip"},
+    "right_wrist_yaw_link": {"offset": [0.08, 0, 0], "label": "Right Hand Tip"},
+    "head_link": {"offset": [0.08, 0, 0.10], "label": "Head Tip"}
+  },
+  "feet": ["left_ankle_roll_link", "right_ankle_roll_link"],
+  "foot_sole_offset": 0.051
+}

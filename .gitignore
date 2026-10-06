@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+outputs/
+dataset/
+# Robot source assets stay on the deployment host; use the prepare command.
+local_assets/
